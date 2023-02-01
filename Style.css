@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* list-style: none; */
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: rgb(158, 207, 230);
+    transition: .3s ease all;
+}
+
+body.dark {
+    background: rgb(26, 26, 26);
+}
+
+.main-content{
+    min-height: 100vh;
+    width: 80%;
+    margin: 4rem auto;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.left-section{
+    grid-column: span 2;
+    height: 100%;
+    background-color: rgb(56, 74, 82);
+}
+
+body.dark .left-section {
+    background-color: #000;
+    color: #bcbcbc;
+}
+
+.rigth-section{
+    grid-column: span 5;
+    background-color: rgb(225, 225, 225);
+    height: 100%;
+}
+
+body.dark .rigth-section {
+    background-color: rgb(4, 10, 37);
+    color: #bcbcbc;
+}
+
+.left-content{
+    padding: 1rem 2rem;
+}
+
+.profile{
+    width: 100%;
+    border-bottom: 2px solid rgb(225, 225, 225);
+}
+
+.profile img{
+    width: 100%;
+    border-radius: 20%;
+    border: 8px solid  rgb(60, 90, 103);
+}
+
+body.dark .profile img {
+    border: 8px solid  rgb(4, 10, 37);
+}
+
+.name{
+    font-size: 2rem;
+    color: rgb(225, 225, 225);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 0 ;
+}
+
+.career{
+    font-size: 1.6rem;
+    color: rgb(232, 225, 225);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-info{
+    padding-top: 10%;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:rgb(225, 225, 225) ;
+    padding-bottom: 0.5rem;
+    padding-top: 3rem;
+}
+
+.contact-info ul i{
+    padding-right: 1rem;
+    font-size: 1rem;
+    color: rgb(19, 158, 158);
+}
+
+.about h1{
+    font-size: 30px;
+    padding: 5px 0px;
+    text-align: center;
+    background-color: rgba(47, 84, 108, 0.287);
+    box-shadow: 0px 3px 1px 1px rgba(32,32,32,0.3);
+}
+
+.about p {
+    padding: 0px 20px;
+}
+
+.educacion h1{
+    font-size: 30px;
+    padding: 5px 0px;
+    text-align: center;
+    background-color: rgba(47, 84, 108, 0.287);
+    box-shadow: 0px 3px 1px 1px rgba(32,32,32,0.3);
+}
+
+.educacion h3,
+.educacion h5,
+.educacion p {
+    padding: 3px 20px;
+}
+
+.experiencia h1 {
+    font-size: 30px;
+    padding: 5px 0px;
+    text-align: center;
+    background-color: rgba(47, 84, 108, 0.287);
+    box-shadow: 0px 3px 1px 1px rgba(32,32,32,0.3);
+}
+
+.experiencia h3,
+.experiencia h5,
+.experiencia p {
+    padding: 3px 20px;
+}
+
+.habilidades h1 {
+    font-size: 30px;
+    padding: 5px 0px;
+    text-align: center;
+    box-shadow: 0px 3px 1px 1px rgba(32,32,32,0.3);
+    background-color: rgba(47, 84, 108, 0.287);
+}
+
+.habilidades ul {
+    padding: 3px 20px 3px 40px;
+}
+
+
+.switch {
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    margin-top: 20px;
+    margin-left: 1000px;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active {
+    background: orange;
+    color: #000;
+}
+
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
